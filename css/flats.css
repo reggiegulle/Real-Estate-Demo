@@ -1,0 +1,452 @@
+/* Style for main page*/
+
+/* As recommended
+for normalizing font-sizes
+while using rems */
+
+html{
+	font-size: 62.5%;
+}
+
+body{	
+	background-color: #969C04;
+	font-size: 1.6rem;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+#dvLoading{
+	background: #000 url("../assets/images/loading.gif") no-repeat center center;
+	height: 168px;
+	width: 148px;
+	position: fixed;
+	z-index: 1000;
+	left: 50%;
+	top: 50%;
+	margin: -42px 0 0 -42px;
+	border-radius: 6px;
+		-moz-box-shadow: 1px 2px 2px #000, -1px -1px 1px #000;
+	box-shadow: 1px 2px 2px #000, -1px -1px 1px #000;
+}
+
+#realestatebanner{
+	position: relative;
+	background: #000;
+	width: 100%;
+	height: auto;
+	margin: 1rem 0 0.4rem;
+}
+
+@media only screen and (max-width: 700px){
+	#video-player-container-bg{
+		display: none;
+		background: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		margin-bottom: 1rem;
+		z-index: 10;
+			-webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+	}
+}
+
+@media only screen and (min-width: 701px){
+	#video-player-container-bg{
+		display: block;
+		background: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		margin-bottom: 0;
+		z-index: 10;
+			-webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+	}
+}
+
+#realestatepos li{
+	position: relative;
+}
+
+@media only screen and (max-width: 700px){
+	#realestatebanner #norminfo {
+		display: none;
+		left: 60%;
+		position: absolute;
+		top: 70%;
+		z-index: 30;
+	}
+}
+
+@media only screen and (min-width: 701px){
+	#realestatebanner #norminfo {
+		display: inline-block;
+		left: 60%;
+		position: absolute;
+		top: 70%;
+		z-index: 30;
+	}
+}
+
+@media only screen and (max-width:700px){
+	#responsiveinfo{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width:701px){
+	#responsiveinfo{
+		display: none;
+		width:0;
+		height:0;
+		margin-bottom: 0;
+	}
+}
+
+#responsiveinfo div{
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+	#video-player-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		width: 100%;
+		min-width: 320px;
+		height: auto; 
+			-webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		z-index: 20;
+	}
+}
+
+@media only screen and (min-width: 701px){
+	#video-player-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		width: 50%;
+		max-width: 560px;
+		height: auto;
+			-webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.75);
+		z-index: 20;
+	}
+}
+
+#descListContainer{
+	background: rgba(255,255,255,0.75);
+	width: 100%;
+	margin: 0.1rem 0;
+	border-radius:0.4rem;
+		-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+#descList li {
+    display: none;
+    margin: 0 2rem;
+    padding: 2rem 0;
+}
+
+.desclistitem img {
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 1px, -1px -1px 2px 1px;
+    display: inline-block;
+}
+
+.desclistitem h4 {
+    font-family: Trebuchet MS,Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-shadow: 1px 2px 3px #ccc;
+}
+
+#descList li .inlineblock {
+    display: inline-block;
+    margin: 0 1.8rem 0.5rem 0;
+}
+
+.desclidesc {
+    line-height: 1.5rem;
+}
+
+.desclidesc .inquirenow {
+    font-size: 0.8rem;
+    padding: 0.1rem 0.4rem;
+}
+
+#carouselContainer,
+#tableCustomControls{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#owlRealEstate.owl-carousel .owl-wrapper-outer{
+	background: #DADD6E;
+	border-color: none;
+    border-radius: 0.4rem;
+    border-style: none;
+    border-width: 0;
+    box-shadow: 1px 5px 9px 4px rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#owlRealEstate li{
+	margin: 0.2rem 0.3rem;
+		-moz-border-radius: 0.6rem;
+	border-radius: 0.6rem;
+		-webkit-box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.75); 
+	padding: 0.2rem;
+    text-align: center;
+}
+
+#owlRealEstate li.normalowlli{
+	background: rgba(255,255,255,0.75);
+	color: #000;
+}
+
+#owlRealEstate li.highlightowlli{
+	background: rgba(11, 30, 196,1);
+	color: #FFF;
+}
+
+#owlRealEstate li p {
+    display: block;
+    font-family: "Arial",sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0.2rem 0.5rem;
+}
+
+#owlRealEstate li span#price {
+    display: inline-block;
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+}
+
+#owlRealEstate li img{
+	border-width: 2px;
+	border-color: #79C7F2;
+	border-style: solid;
+	border-radius: 0.5rem;
+		-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.owl-theme .owl-controls{
+	position: relative;
+	background: #969C04;
+	margin-top: 10px;
+	text-align: center;
+	height: 2.5rem;
+	border-radius: 0.4rem;
+}
+
+@media only screen and (max-width:768px){
+	.owl-pagination{
+		display: none;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -87px;
+		z-index: 200;
+	}
+}
+
+@media only screen and (min-width:769px){
+	.owl-pagination{
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -87px;
+		z-index: 200;
+	}
+}
+
+.owl-buttons{
+	position: relative;
+}
+
+.owl-prev{
+	position: absolute;
+	left: 0px;
+}
+
+.owl-next{
+	position: absolute;
+	right: 0px;
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+	background: none repeat scroll 0 0 #DADD6E;
+	border-radius: 1.5rem;
+	text-shadow: 1px 1px 3px #000;
+	color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 5px;
+    opacity: 1;
+    padding: 3px 10px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #e5e5e5;
+    border-radius: 20px;
+    height: 24px;
+    margin: 5px 15px;
+    width: 24px;
+}
+
+#realestatepos.owl-carousel .owl-wrapper-outer {
+    background: none repeat scroll 0 center #b3b3b3;
+    border-color: #fff;
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0rem;
+    position: relative;
+    width: 100%;
+}
+
+#tableCustomControls, #filters-container {
+    background: none repeat scroll 0 0 rgba(2, 14, 107, 0.5);
+    box-sizing: border-box;
+    margin: 5px auto 0;
+    padding: 4px 1rem 0.5rem;
+    text-align: center;
+}
+
+#tableCustomControls li, #filters li {
+    display: inline-block;
+    margin: 0.4rem 0.5rem;
+}
+
+#tableCustomControls li p, #tableCustomControls li label, #filters li p {
+    color: #fff;
+    display: inline;
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 0.8rem;
+}
+
+#tableCustomControls li div, #filters li #datebutton, #filters li #pricebutton, #filters li #sqmbutton, #filters li #bedbutton, #filters li #carbutton, #filters li #resetfilterbutton {
+    background: none repeat scroll 0 0 #0b1ec4;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 1px rgba(175, 172, 172, 0.75), -1px -1px 1px rgba(175, 172, 172, 0.75);
+    color: #fff;
+    cursor: pointer;
+    display: inline;
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    text-shadow: 0 1px 2px rgb(0, 0, 0);
+		-webkit-transition: background 0.25s ease 0s;
+	transition: background 0.25s ease 0s;
+}
+
+#tableCustomControls li div:hover, #filters li #datebutton:hover, #filters li #pricebutton:hover, #filters li #sqmbutton:hover, #filters li #bedbutton:hover, #filters li #carbutton:hover, #filters li #resetfilterbutton:hover {
+	background: none repeat scroll 0 0 #d4d8fc;
+	color: #0C2BF7;
+	text-decoration: underline;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+#tableCustomControls li label input#customSearch{
+	color: #000;
+}
+
+#tableCustomControls img {
+    margin: -0.5rem 0;
+}
+
+#filters li, #filter-container div {
+    display: inline-block;
+}
+
+#inquirenow,
+.inquirenow,
+#showinfo,
+.showinfo,
+#hideinfo,
+.hideinfo{
+	padding: 0.3rem;
+	margin-right: 1rem;
+	border-radius: 0.4rem;
+}
+
+#showinfo,
+.showinfo,
+#hideinfo,
+.hideinfo{
+	background: #FFF;
+	color: #000;
+	text-shadow: 1px 1px 3px #000;
+}
+
+#inquirenow,
+.inquirenow{
+	background: #B9BF07;
+	color: #FFF;
+	text-shadow: 1px 1px 3px #000;
+}
+
+table {
+    background-color: #efefef;
+}
+
+table.dataTable thead > tr > th {
+    background: none repeat scroll 0 0 #dadd6e;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.dataTable thead .sorting {
+    background: url("../assets/images/sort_both.png") no-repeat scroll right center #dadd6e;
+}
+
+table.dataTable thead .sorting_asc {
+    background: url("../assets/images/sort_asc.png") no-repeat scroll right center #dadd6e;
+}
+
+table.dataTable thead .sorting_desc {
+    background: url("../assets/images/sort_desc.png") no-repeat scroll right center #dadd6e;
+}
+
+table.dataTable td, table.dataTable th {
+    box-sizing: content-box;
+    text-align: center;
+}
+
+#realEstateTable tbody tr td img {
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px 1px, -1px -1px 2px 1px;
+    cursor: pointer;
+}

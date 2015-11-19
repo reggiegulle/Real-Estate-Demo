@@ -1,0 +1,584 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta property="og:url" content="http://www.reggiegulle.netau.net"/>
+<meta property="og:title" content="Real Estate Demo Website"/>
+<meta property="og:image" content="http://www.reggiegulle.netau.net/assets/images/ogthumb.png"/>
+<meta property="og:description" content="Demo Real Estate Website with Integrated Video and One-Page Navigation"/>
+<title>Free Flats Website Template | Home :: w3layouts</title>
+<link href="css/cssreset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/dataTables.bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/dataTables.responsive.css" rel="stylesheet" type="text/css" media="screen">
+<link href="owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+<link href="owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/flats.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="http://fonts.googleapis.com/css?family=Limelight" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<!--[if lt IE 9]>
+		<script src="js/html5shiv/html5shiv-ver-3.7.2-4-g690b910.js"></script>
+<![endif]-->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="js/dataTables.responsive.min.js" type="text/javascript"></script>
+<script src="js/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.dataTables.yadcf.js" type="text/javascript"></script>
+<script src="owl-carousel/owl.carousel.js" type="text/javascript"></script>
+<script src="js/flats.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$("#dvLoading").fadeOut(2000);
+	});
+</script>
+</head>
+<body>
+<script type="text/javascript">
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement("script");
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+<div id="dvLoading">
+</div>
+
+<div class="header">	
+	<div class="wrap"> 
+		<div class="header-top">
+			 <div class="logo">
+				 <a href="index.html"><img src="images/logo.png" alt=""></a>
+			 </div>
+			 <div class="cart">
+				<div class="span6 header-sidebar" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-4">
+					<div id="text-6" class="visible-all-devices "><div class="textwidget"><a href="#" class="header-btn">Reservation</a></div></div>
+					<div class="ph-no">
+		    			Browse Online or Call Us Toll Free – <span class="phone-number">1(800) 555-4689</span>  </div>
+		    		<div class="search">
+				    		<form>
+				    			<input type="text" value="">
+				    			<input type="submit" value="">
+				    		</form>
+					</div>
+				</div>
+			</div>	
+			<div class="clear"></div> 
+	   	</div>
+	</div>	
+</div>
+<div class="header-bottom">
+	<div class="wrap">
+		<div id='cssmenu'>
+			<ul>
+			   <li class='active'><a href='index.html'><span>Home</span></a></li>
+			   <li><a href='about.html'><span>About</span></a></li>
+			   <li class='has-sub'><a href='services.html'><span>Services</span></a>
+			      <ul>
+			         <li class='has-sub'><a href='services.html'><span>Service 1</span></a></li>
+			         <li class='has-sub'><a href='services.html'><span>Service 2</span></a></li>
+			      </ul>
+			   </li>
+			   <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<ul class="follow_icon">
+			<li><a href="#" style="opacity: 1;"><img src="images/facebook.png" alt=""></a></li>
+			<li><a href="#" style="opacity: 1;"><img src="images/feed.png" alt=""></a></li>
+			<li><a href="#" style="opacity: 1;"><img src="images/twitter.png" alt=""></a></li>
+		</ul>
+		<div class="clear"></div> 
+	</div>
+</div>
+	<section id="realestatebanner">
+		<section id="video-player-container-bg">
+			<ul id="realestatepos">
+			</ul>
+		</section>
+		<article id="norminfo">
+			<div>
+				<button class="inquirenow">INQUIRE NOW</button>
+				<button class="showinfo">SHOW INFO</button>
+				<button class="hideinfo">HIDE INFO</button>
+			</div>
+		</article>
+		<section id="video-player-container">
+			<article id="player"></article>
+		</section>
+	</section>
+	<article id="responsiveinfo">
+		<div>
+			<button id="inquirenow">INQUIRE NOW</button>
+			<button id="showinfo">SHOW INFO</button>
+			<button id="hideinfo">HIDE INFO</button>
+		</div>
+	</article>
+	<section id="descListContainer">
+		<ul id="descList">
+		</ul>
+	</section>
+	<section id="carouselContainer">
+		<ul id="owlRealEstate">
+		</ul>
+	</section>
+	
+	<section id="filters-container">
+		<ul id="filters">
+			<li id="filter-container">
+				<p>Filter By</p> <div id="pricebutton">Price</div><div id="pricefilter"></div>
+			</li>
+			<li id="filter-container">
+				<p>Filter By</p> <div id="sqmbutton">Sq Mtr</div><div id="sqmtrfilter"></div>
+			</li>
+			<li id="filter-container">
+				<p>Filter By</p> <div id="bedbutton">Bedrooms</div><div id="bdrmfilter"></div>
+			</li>
+			<li id="filter-container">
+				<p>Filter By</p> <div id="carbutton">Car Space</div><div id="carfilter"></div>
+			</li>
+			<li id="filter-container-reset">
+				<div id="resetfilterbutton" onclick="yadcf.stopPropagation(event); yadcf.doFilter('clear', '-realEstateTable', 5); yadcf.doFilter('clear', '-realEstateTable', 6); yadcf.doFilter('clear', '-realEstateTable', 9); yadcf.doFilter('clear', '-realEstateTable', 10); return false;">Reset Filters</div>
+			</li>
+		</ul>
+	</section>
+	
+	<section id="tableCustomControls-container">
+		<ul id="tableCustomControls">
+			<li><p>Sort By</p>
+				<div id="sortRelevance">Relevance</div>
+			</li>
+			<li><p>Sort By Date</p>
+				<div id="newestOldestDate">Newest-Oldest</div>
+				<div id="oldestnewestDate">Oldest-Newest</div>
+			</li>
+			<li><p>Sort By Price</p>
+				<div id="lowestHighestPrice">Lowest - Highest</div>
+				<div id="highestLowestPrice">Highest - Lowest</div>
+			</li>
+			<li><p>Sort By Sq Mtrs</p>
+				<div id="highestLowestSqMtrs">Highest - Lowest</div>
+				<div id="lowestHighestSqMtrs">Lowest - Highest</div>
+			</li>
+			<li><p>Sort By Bedrooms</p>
+				<div id="highestLowestBdrm">Highest - Lowest</div>
+				<div id="lowestHighestBdrm">Lowest - Highest</div>
+			</li>
+			<li><p>Sort By Car Park</p>
+				<div id="highestLowestParking">Highest - Lowest</div>
+				<div id="lowestHighestParking">Lowest - Highest</div>
+			</li>
+			<li>
+				<label>
+					Search:
+					<input type="text" id="customSearch">
+				</label>
+				<img id="searchicon" src="assets/images/search_icon.png" alt="" width="25px" height="25px" />
+				<div id="searchreset">Reset Search</div>
+			</li>
+		</ul>			
+	</section>
+	
+	<section id="dataTables-container" class="table-responsive">
+		<table id="realEstateTable" class="table table-bordered table-striped dt-responsive nowrap" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th><h2>Details</h2></th>
+					<th><h2>Date Listed</h2></th>
+					<th><h2>Address</h2></th>
+					<th><h2>Image</h2></th>
+					<th><h2>Sq Mtrs</h2></th>
+					<th><h2>Bedrooms</h2></th>
+					<th><h2>Parking</h2></th>
+					<th><h2>Price</h2></th>
+					<th><h2>Description</h2></th>
+					<th><h2>Category</h2></th>
+					<th><h2>Tier</h2></th>
+				</tr>
+			</thead>	
+		</table>		
+	</section>
+</section>	
+		<div class="main">
+			<div class="content-top">
+				<div class="wrap">
+					<div class="section group">
+						<div class="col_1_of_3 span_1_of_3">
+							<h2>Commercial</h2>
+							<div class="grid-img">
+								<img src="images/home.png" alt=""/>
+							</div>
+							<h4 class="title-box_secondary"><span>10% OFF</span> ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<h2>Residential</h2>
+							<div class="grid-img">
+								<img src="images/phone.png" alt=""/>
+							</div>
+							<h4 class="title-box_secondary"><span>10% OFF</span> ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+						</div>
+						<div class="col_1_of_3 span_1_of_3">
+							<h2>Luxury</h2>
+							<div class="grid-img">
+								<img src="images/man.png" alt=""/>
+							</div>
+							<h4 class="title-box_secondary"><span>10% OFF</span> ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+						</div>
+						<div class="clear"></div> 
+					</div>
+				</div>
+		</div>
+		<div class="content-bottom1">
+			<div class="wrap">
+				<div class="section group">
+				  <div class="cont span_2_of_3">
+				  		<div class="heading">
+				  			<h3>What we Offer?</h3>
+				  		</div>
+				       <div class="section group">
+				       		<div class="col_1_of_3 span_1_of_3">
+								<div class="flat-no">
+									<img src="images/a.png" alt=""/>
+								</div>
+								<div class="flat-desc">
+									<h3>Lorem ipsum dolor sit amet, consectetuer</h3>
+								</div>
+								<div class="clear"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<div class="flat-no">
+									<img src="images/b.png" alt=""/>
+								</div>
+								<div class="flat-desc">
+									<h3>Lorem ipsum dolor sit amet, consectetuer</h3>
+								</div>
+								<div class="clear"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<div class="flat-no">
+									<img src="images/c.png" alt=""/>
+								</div>
+								<div class="flat-desc">
+									<h3>Lorem ipsum dolor sit amet, consectetuer</h3>
+								</div>
+								<div class="clear"></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="clear"></div> 
+						</div>	
+						<div class="heading">
+				  			<h3>Real Estate Guides </h3>
+				  		</div>	
+				  		<div class="section group">
+				       		<div class="col_1_of_3 span_1_of_3">
+								<div class="css3">
+								  <img src="images/pic.jpg" alt="css3" title="Flats" />
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<div class="css3">
+								  <img src="images/pic1.jpg" alt="css3" title="Flats" />
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<div class="css3">
+								  <img src="images/pic2.jpg" alt="css3" title="Flats" />
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+								<a href="#" class="link">Read More</a>
+							</div>
+							<div class="clear"></div> 
+						</div>			    
+				</div>
+				<div class="rsidebar span_1_of_3">
+					   <div class="heading1">
+				  			<h3>Our Updates</h3>
+				  		</div>
+				  		<div class="items">
+				  		<div class="item">
+       						<div class="item_published">
+						        <span class="month">Oct</span>
+								<span class="day">09</span>
+								<span class="year">2013</span>
+						    </div>
+							<div class="item_content">
+								<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+								<p class="title1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+							</div>
+							<div class="clear"></div>   
+					    </div>
+					    <div class="item">
+       						<div class="item_published">
+						        <span class="month">Oct</span>
+								<span class="day">09</span>
+								<span class="year">2013</span>
+						    </div>
+							<div class="item_content">
+								<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+								<p class="title1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+							</div>
+							<div class="clear"></div>   
+					    </div>
+					    <div class="item">
+       						<div class="item_published">
+						        <span class="month">Oct</span>
+								<span class="day">09</span>
+								<span class="year">2013</span>
+						    </div>
+							<div class="item_content">
+								<p class="title">Lorem ipsum dolor sitconsectetueradipis</p>
+								<p class="title1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+							</div>
+							<div class="clear"></div>   
+					    </div>
+					  </div>
+			<div class="login-title">
+           		<h4 class="title">User Login</h4>
+				<div id="loginbox" class="loginbox">
+					<form action="" method="post" name="login" id="login-form">
+					  <fieldset class="input">
+					    <p id="login-form-username">
+					      <label for="modlgn_username">Username</label>
+					      <input id="modlgn_username" type="text" name="username" class="inputbox" size="18" autocomplete="off">
+					    </p>
+					    <p id="login-form-password">
+					      <label for="modlgn_passwd">Password</label>
+					      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+					    </p>
+					    <p id="login-form-remember">
+					      <label for="modlgn_remember" class="checkbox">Remember me</label>
+					      <input id="modlgn_remember" type="checkbox" name="remember" class="checkbox" value="yes" autocomplete="off">
+					    </p>
+					    <input type="submit" name="Submit" class="button" value="Login">
+					  </fieldset>
+					 </form>
+				</div>
+			</div>
+			</div>
+			<div class="clear"></div>   
+		</div>
+	   </div>
+	 </div>
+	</div>
+<script type="text/javascript">
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+			height: "100%",
+			width: "100%",
+			videoId: "",
+			playerVars: {
+				"autohide": 1,
+				"controls": 2,
+				"enablejsapi": 1,
+				"iv_load_policy": 3,
+				"modestbranding": 1,
+				"playsinline": 1,
+				"rel": 0,
+				"showinfo": 0
+			},
+			events:{
+				"onReady":onPlayerReady,
+				"onStateChange":onPlayerStateChange
+			}
+		});
+	}
+	function onPlayerReady(event){
+		var playlistArray = [];
+		
+		$("#realEstateTable tbody tr").each(function(){
+			var trvideoid = $(this).data("videoid");
+			playlistArray.push(trvideoid);
+		});
+		
+		var playlistArrayJoin = playlistArray.join(",");
+		player.cuePlaylist(playlistArrayJoin);
+		
+		//declare dataTable variable
+		var realEstateTable = $("#realEstateTable").DataTable();
+		
+		realEstateTable.on("draw.dt", function(){
+			//remove all array elements
+			//like, clear playlist
+			while(playlistArray.length > 0){
+				playlistArray.pop();
+			}
+			
+			//get the videoid from each tr
+			$("#realEstateTable tbody tr").each(function(){
+				var trvideoid = $(this).data("videoid");
+				//console.log(trvideoid);
+				//create first array playlist
+				playlistArray.push(trvideoid);
+			});
+
+			//cue the playlist
+			var playlistArrayJoin = playlistArray.join(",");
+			player.cuePlaylist(playlistArrayJoin);
+		});
+		
+		
+		//assign a click callback to each img element in the table
+		$("#realEstateTable tbody tr td img").each(function(){
+			$(this).click(function(){
+				var trplaylistindex = $(this).closest("tr").attr("data-index");
+				player.playVideoAt(trplaylistindex);
+				$("html, body").animate({
+					scrollTop: $("#video-player-container").offset().top 
+				},500);
+			});
+		});
+		
+		$("select").change(function(){
+			$("html, body").animate({
+				scrollTop: $("#realEstateTable").offset().top 
+			},0);
+		
+		});
+		
+		//hide or show the
+		//laptop,desktop info buttons on player Ready
+		$(".showinfo").show();
+		$(".hideinfo").hide();
+		$("#descListContainer").hide();
+		
+		//hide or show the
+		//laptop,desktop info buttons on resize
+		$(window).resize(function(){
+			$(".showinfo").show();
+			$(".hideinfo").hide();
+			$("#descListContainer").hide();
+		});
+
+
+		//onclick, show descrip list
+		$(".showinfo").click(function(){
+			$(this).hide();
+			$(".hideinfo").show();
+			$("#descListContainer").show();
+		});
+		
+		//onclick, hide descrip list
+		$(".hideinfo").click(function(){
+			$(this).hide();
+			$(".showinfo").show();
+			$("#descListContainer").hide();
+		});
+		
+		
+		//hide or show the
+		//laptop,desktop info buttons on player Ready
+		$("#showinfo").show();
+		$("#hideinfo").hide();
+		$("#descListContainer").hide();
+		
+		//hide or show the
+		//laptop,desktop info buttons on resize
+		$(window).resize(function(){
+			$("#showinfo").show();
+			$("#hideinfo").hide();
+			$("#descListContainer").hide();
+		});
+		
+		//onclick, show descrip list
+		$("#showinfo").click(function(){
+			$(this).hide();
+			$("#hideinfo").show();
+			$("#descListContainer").show();
+		});
+		
+		//onclick, hide descrip list
+		$("#hideinfo").click(function(){
+			$(this).hide();
+			$("#showinfo").show();
+			$("#descListContainer").hide();
+		});
+	}
+	
+	function onPlayerStateChange(event){
+	
+		if (YT.PlayerState.PLAYING){
+			var playervideoindex = player.getPlaylistIndex();
+			
+			
+			//show or hide the hoteldesc li item
+			//depending on the video index
+			$("#descList li").each(function(){
+				if ($(this).data("index") == playervideoindex){
+					$(this).show();
+				}
+				else{
+					$(this).hide();
+				}
+			});
+			
+		
+			$("#owlRealEstate li").each(function(){
+				if ($(this).data("index") == playervideoindex){
+					$(this).removeClass("normalowlli");
+					$(this).addClass("highlightowlli");
+				}
+				else{
+					$(this).removeClass("highlightowlli");
+					$(this).addClass("normalowlli");
+				}
+			});
+			
+			
+			//move the bannerpos to the correct
+			//slide when the player updates
+			$("#owlRealEstate li").each(function(){
+				if($(this).hasClass("highlightowlli")){
+					var datapos = $(this).data("pos");
+					var realestatepos = $("#realestatepos");
+					realestatepos.trigger("owl.goTo", datapos);
+				}
+			});
+			
+		}
+		
+		
+		if (YT.PlayerState.PAUSED){
+			var owlRealEstate = $("#owlRealEstate");
+			$("#owlRealEstate li").each(function(){
+				if($(this).hasClass("highlightowlli")){
+					owlRealEstate.trigger("owl.goTo",$("#owlRealEstate li").index(this));
+				}
+			});
+		}
+	}
+</script>
+	<div class="copy-right">
+		<div class="wrap">
+			<p>Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
+		</div>
+	</div>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>       
